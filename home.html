@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <head>
     <title>Home</title>
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="/node_modules/materialize-css/dist/css/materialize.css"  media="screen,projection"/>
+
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
     <div>
         <h1>
             <!--This will go over the banner-->
-            <b>Welcome to POG4LIFE Gaming!!</b>
+            <center>
+							<b>Welcome to POG4LIFE Gaming!!</b>
+						</center>
         </h1>
     </div>
-
-    <!--This section is for buttons-->
-    <div>
-        <h4>
-            Sets
-        </h4>
-
-        <h4>
-            Skills
-        </h4>
-
-        <h4>
-            Champion Points
-        </h4>
-
-        <H4>
-            Zone Maps
-        </H4>
-
-        <H4>
-            Companion Corner
-        </H4>
-
-        <!--This will not be used yet
-        <h4>
-            Builds
-        </h4>-->
-    </div>
+		<nav>
+			<div class="nav-wrapper navigation black">
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sets.html" class="navigation-items">Sets</a></li>
+					<li><a href="skills.html" class="navigation-items">Skills</a></li>
+					<li><a href="#" class="navigation-items">Champion Points</a></li>
+					<li><a href="zones.html" class="navigation-items">Zone Maps</a></li>
+					<li><a href="companion_corner.html" class="navigation-items">Companion Corner</a></li>
+				</ul>
+			</div>
+		</nav>
+	
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="sets.html">Sets</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li><a href="#">Champion Points</a></li>
+			<li><a href="zones.html">Zone Maps</a></li>
+			<li><a href="companion_corner.html">Companion Corner</a></li>
+		</ul>
 
     <div>
         <h2>
@@ -58,5 +59,24 @@
             <a href="https://www.etsy.com/shop/SavageDuo"><em>Get Your POG Merch!</em></a>
         </h4>
     </div>
+    <script type="text/javascript" src="/node_modules/materialize-css/dist/js/materialize.js"></script>
 </body>
 </html>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		let elems = document.querySelectorAll('.sidenav');
+		let instances = M.Sidenav.init(elems, options);
+	});
+</script>
+<style>
+	.navigation {
+		display: flex;
+		justify-content: center;
+	}
+	.navigation-items {
+		font-size: 2em;
+		color: #cc8000;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+</style>
