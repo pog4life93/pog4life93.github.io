@@ -5,7 +5,7 @@
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<!--Import materialize.css-->
 			<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-
+			<link type="text/css" rel="stylesheet" href="css/style.css"/>
 			<!--Let browser know website is optimized for mobile-->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -38,27 +38,36 @@
 			<li><a href="zones.html">Zone Maps</a></li>
 			<li><a href="companion_corner.html">Companion Corner</a></li>
 		</ul>
+	<div class="supermain">
+		<div class="sidebar">
+			<h4>
+				<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile.-->
+				<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
+			</h4>
+		</div>
+		<div class="main">
+			<div class="content">
+				<h2>
+					<!--It would be good to stack this and the YouTube link vertically.-->
+					<a href="https://www.twitch.tv/xpog4lifex" target="_blank"><em>Twitch</em></a>
+				</h2>
+			</div>
+		
+			<div class="content">
+				<h2>
+					<!--It would be good to stack this under the Twitch link vertically.-->
+					<a href="https://www.youtube.com/c/POG4LIFE" target="_blank"><em>YouTube</em></a>
+				</h2>
+			</div>
+		</div>
+		<div class="hideSidebar sidebar">
+			<h4>
+				<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile. (I think for mobile you are going to want to either stack this on top of main content)-->
+				<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
+			</h4>
+		</div>
+	</div>
 
-    <div>
-        <h2>
-            <!--It would be good to stack this and the YouTube link vertically.-->
-            <a href="https://www.twitch.tv/xpog4lifex" target="_blank"><em>Twitch</em></a>
-        </h2>
-    </div>
-
-    <div>
-        <h2>
-            <!--It would be good to stack this under the Twitch link vertically.-->
-            <a href="https://www.youtube.com/c/POG4LIFE" target="_blank"><em>YouTube</em></a>
-        </h2>
-    </div>
-
-    <div>
-        <h4>
-            <!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile.-->
-            <a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
-        </h4>
-    </div>
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 </html>
@@ -70,20 +79,5 @@
 	});
 </script>
 <style>
-	.navigation {
-		display: flex;
-		justify-content: center;
-	}
-	.hamburger-left {
-		margin-right: auto;
-	}
-	.hamburger {
-		color: #cc8000;
-	}
-	.navigation-items {
-		font-size: 2em;
-		color: #cc8000;
-		margin-left: 1vw;
-		margin-right: 1vw;
-	}
+
 </style>
