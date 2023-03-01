@@ -6,12 +6,27 @@
 #AC44F2 Purple */
 
 body {
-    color: #42A0F8;
+    color: #FFFFFF;
     background-color: #212121;
+}
+.header {
+    color: #42A0F8;
+    font-size: 1.8em;
+    display: flex;
+}
+.header-first {
+    padding-top: 20px;
+}
+a {
+    color: #02B615;
+}
+a:hover {
+    color: #42A0F8;
 }
 .navigation {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .hamburger-left {
     margin-right: auto;
@@ -28,6 +43,27 @@ body {
 .navigation-items:hover {
     color: #42A0F8;
 }
+.greeting {
+    color: #02B615;
+    font-size: 5vw;
+}
+@media screen and (min-width: 993px) {
+    .greeting {
+      display: none;
+    }
+  }
+.greeting-large {
+    color: #02B615;
+    font-size: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media screen and (max-width: 993px) {
+    .greeting-large {
+      display: none;
+    }
+  }
 .supermain {
     display: flex;
     flex-direction: row;
@@ -49,18 +85,32 @@ body {
     text-align: center;
 }
 @media screen and (max-width: 480px) {
+    .supermain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .sidebar {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    .main {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 480px) {
     .hideSidebar {
       display: none;
     }
   }
 .content {
     width: 100%;
-    background-color: #303030;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: #000000;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border: 1px solid #7c7c7c; 
     padding: 10px;
 }
