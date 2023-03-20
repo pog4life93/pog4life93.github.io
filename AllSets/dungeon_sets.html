@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <head>
-    <title>Home</title>
-			<!--Import Google Icon Font-->
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-			<!--Import materialize.css-->
-			<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-            <link type="text/css" rel="stylesheet" href="css/style.css"/>
-			<!--Let browser know website is optimized for mobile-->
-			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dungeon Sets</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+
 
 <body>
 	<div>
         <h1>
             <!--This will go over the banner-->
-            <center>
-                <b>Dungeon Sets</b>
-            </center>
+            <div class="greeting-large">
+				Dungeon Sets
+            </div>
         </h1>
     </div>
 
-    <!--Navigation Bar-->
-    <div>
-        <nav>
-            <div class="nav-wrapper navigation black">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html" class="navigation-items">Home</a></li>
-                    <li><a href="sets.html" class="navigation-items">Sets</a></li>
-                    <li><a href="champ_pts.html" class="navigation-items">Champion Points</a></li>
-                    <li><a href="skills.html" class="navigation-items">Skills</a></li>
-                    <li><a href="zones.html" class="navigation-items">Zone Maps</a></li>
-                    <li><a href="companion_corner.html" class="navigation-items">Companion Corner</a></li>
-                </ul>
-            </div>
-        </nav>
-    
-        <!--Mobile Hamburger-->
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sets.html">Sets</a></li>
-            <li><a href="champ_pts.html">Chamption Points</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="zones.html">Zone Maps</a></li>
-            <li><a href="companion_corner.html">Companion Corner</a></li>
-        </ul>
-    </div>
+    <!--Navigation bar-->
+    <nav>
+        <div class="nav-wrapper navigation black">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <div data-target="mobile-demo" class="sidenav-trigger greeting">Dungeon Sets</div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/index.html" class="navigation-items">Home</a></li>
+                <li><a href="/AllSets/sets.html" class="navigation-items">Sets</a></li>
+                <li><a href="/AllSkills/skills.html" class="navigation-items">Skills</a></li>
+                <li><a href="/AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
+                <li><a href="/AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
+                <li><a href="/AllCompanions/companion_corner.html" class="navigation-items">Companion Corner</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/AllSets/sets.html">Sets</a></li>
+        <li><a href="/AllSkills/skills.html">Skills</a></li>
+        <li><a href="/AllChampion/champ_pts.html">Chamption Points</a></li>
+        <li><a href="/AllZone/zones.html">Zone Maps</a></li>
+        <li><a href="/AllCompanions/companion_corner.html">Companion Corner</a></li>
+    </ul>
 
     <div>
+        <!--This is the beginning of the sets-->
         <br><b>Abyssal Brace</b><br>
         <b>2 items:</b> Adds 1096 Maximum Stamina<br>
         <b>3 items:</b> Adds 1096 Maximum Stamina<br>
@@ -709,9 +709,10 @@
         <b>4 items:</b> Adds 1096 Maximum Magicka<br>
         <b>5 items:</b> Your Light Attacks apply the Touch of Z'en on enemies for 20 seconds. Enemies with the Touch of Z'en take an additional 1% more damage for each damage over time effect you've placed on them, up to 5%. You can only receive the benefit from one Touch of Z'en per enemy<br>
     </div>
+
+    <script type="text/javascript" src="../js/materialize.js"></script>
 </body>
 </html>
-
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
 		let elems = document.querySelectorAll('.sidenav');
@@ -720,4 +721,5 @@
 	});
 </script>
 <style>
+
 </style>
