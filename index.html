@@ -11,90 +11,106 @@
 </head>
 
 <body>
-    <div>
-        <h1>
-            <!--This will go over the banner-->
-            <div class="greeting-large">
-				Welcome to POG4LIFE Gaming!!
-			</div>
-        </h1>
-    </div>
-	
-	<!--Navigation bar-->
-	<nav>
-		<div class="nav-wrapper navigation black">
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger hamburger"><i class="material-icons">menu</i></a>
-				<div data-target="mobile-demo" class="sidenav-trigger greeting">Welcome to POG4LIFE Gaming!!</div>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="AllSets/sets.html" class="navigation-items">Sets</a></li>
-				<li><a href="AllSkills/skills.html" class="navigation-items">Skills</a></li>
-				<li><a href="AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
-				<li><a href="AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
-				<li><a href="AllCompanions/companion_corner.html" class="navigation-items">Companion Corner</a></li>
-			</ul>
-		</div>
-	</nav>
+	<div class="lvl1">
+		<div class="lvl2">
+			<div class="lvl3">
+				<div class="greeting-large">
+					<a href="index.html" style="line-height: 0px"><img src="assets/heroImage.jpg" /></a>
+				</div>
+				
+				<!--Navigation bar-->
+				<nav class="navigation">
+					<div class="nav-wrapper">
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger hamburger"><i class="material-icons">menu</i></a>
+							<div data-target="mobile-demo" class="sidenav-trigger greeting">Welcome to POG4LIFE Gaming!!</div>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="#"  class="navigation-items dropdown-trigger" data-target="setdd">Sets<i class="material-icons right">arrow_drop_down</i></a></li>
+							<li><a href="#" class="navigation-items dropdown-trigger" data-target="skillsdd">Skills<i class="material-icons right">arrow_drop_down</i></a></li>
+							<li><a href="AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
+							<li><a href="AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
+							<li><a href="AllCompanions/companion_corner.html" class="navigation-items">Companion Corner</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!--Navigation sidebar mobile-->
+				<ul class="sidenav" id="mobile-demo">
+					<li><a class="dropdown-trigger" href="AllSets/sets.html">Sets<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="AllSkills/skills.html">Skills</a></li>
+					<li><a href="AllChampion/champ_pts.html">Champion Points</a></li>
+					<li><a href="AllZone/zones.html">Zone Maps</a></li>
+					<li><a href="AllCompanions/companion_corner.html">Companion Corner</a></li>
+				</ul>
 
-	<ul class="sidenav" id="mobile-demo">
-		<li><a href="AllSets/sets.html">Sets</a></li>
-		<li><a href="AllSkills/skills.html">Skills</a></li>
-		<li><a href="AllChampion/champ_pts.html">Champion Points</a></li>
-		<li><a href="AllZone/zones.html">Zone Maps</a></li>
-		<li><a href="AllCompanions/companion_corner.html">Companion Corner</a></li>
-	</ul>
+				<!--Dropdown FIXME: When creating dropdown for the mobile, it has to have a different id-->
+				<ul id="setdd" class="dropdown-content">
+					<li><a href="AllSets/craftable_sets.html">Craftable</a></li>
+					<li><a href="AllSets/arena_sets.html">Arena</a></li>
+					<li><a href="AllSets/dungeon_sets.html">Dungeon</a></li>
+					<li><a href="AllSets/trial_sets.html">Trial</a></li>
+				</ul>
+				<ul id="skillsdd" class="dropdown-content">
+					<li><a href="AllSkills/skills.html">Classes</a></li>
+					<li><a href="AllSkills/skills.html">Alliance</a></li>
+					<li><a href="AllSkills/skills.html">Armor</a></li>
+					<li><a href="AllSkills/skills.html">Crafting</a></li>
+					<li><a href="AllSkills/skills.html">Guild</a></li>
+					<li><a href="AllSkills/skills.html">Racial</a></li>
+					<li><a href="AllSkills/skills.html">Weapon</a></li>
+					<li><a href="AllSkills/skills.html">World</a></a></li>
+				</ul>
 
-	<div class="supermain">
-		<div class="sidebar">
-			<h4>
-				<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile.-->
-				<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
-			</h4>
-		</div>
-
-		<div class="main">
-			<div class="header header-first">Twitch</div>
-			<div class="content">
-				<h2>
-					<!--It would be good to stack this and the YouTube link vertically.-->
-					<a href="https://www.twitch.tv/xpog4lifex" target="_blank"><em>Twitch</em></a>
-				</h2>
-			</div>
-		
-			<div class="header">YouTube</div>
-			<div class="content">
-				<h2>
-					<!--It would be good to stack this under the Twitch link vertically.-->
-					<a href="https://www.youtube.com/c/POG4LIFE" target="_blank"><em>YouTube</em></a>
-				</h2>
+				<!--Alerts-->
+				<div class="alert">
+					This website is currently under development!! Keep checking back!!
+				</div>
 			</div>
 			
-			<div class="header">Welcome</div>
-			<div class="content">
-				<h1>This website is currently under development!!<br>Keep checking back!!</h1><br>
-			</div>
 
-			<div class="header">Test</div>
-			<div class="content">
-				Welcome to the website! Here is some bacon ipsum for your reading pleasure!
-				<br><br>
-				Bacon ipsum dolor amet landjaeger salami brisket, biltong filet mignon pork loin andouille. Jerky pig biltong pork belly chislic shankle pork strip steak bresaola doner capicola andouille ham hock pork chop chuck. Andouille alcatra strip steak cow tongue tri-tip turkey kielbasa shankle turducken. Swine pork belly bacon meatloaf, strip steak fatback meatball pig landjaeger cupim tongue burgdoggen sirloin.
-				<br><br>
-				Chuck turkey frankfurter strip steak. Chuck short ribs picanha, brisket tenderloin burgdoggen cupim ham landjaeger frankfurter ham hock ground round pork belly. Cow turducken pork belly chislic ham brisket filet mignon boudin turkey venison. Landjaeger strip steak chicken drumstick sausage hamburger shoulder venison turkey spare ribs pork chop sirloin ham hock. Drumstick ball tip turducken alcatra bacon andouille. Pig bacon jowl ribeye, leberkas doner andouille chuck sirloin porchetta meatball sausage bresaola frankfurter swine. Beef hamburger kevin pig pancetta.
-				<br><br>
-				Doner ball tip short loin, beef ribs chicken ham hock beef hamburger shoulder strip steak. Tongue chicken filet mignon ground round shoulder turkey picanha frankfurter doner pancetta alcatra turducken kevin tri-tip ribeye. Cupim fatback hamburger sausage pancetta. Brisket beef pastrami jowl. Frankfurter kevin jerky tail porchetta biltong tongue ham hock. Filet mignon kevin ball tip bresaola doner biltong cupim ham hock strip steak t-bone shankle sausage.
-				<br><br>
-				Does your lorem ipsum text long for something a little meatier? Give our generator a try… its tasty!
+			<div class="lvl4">
+				<div class="main">
+					<div class="header">Twitch</div>
+					<div class="video-embeds">
+						<h2>
+							<!--It would be good to stack this and the YouTube link vertically.-->
+							<a href="https://www.twitch.tv/xpog4lifex" target="_blank"><em>Twitch</em></a>
+						</h2>
+					</div>
+				
+					<div class="header">YouTube</div>
+					<div class="video-embeds">
+						<h2>
+							<!--It would be good to stack this under the Twitch link vertically.-->
+							<a href="https://www.youtube.com/c/POG4LIFE" target="_blank"><em>YouTube</em></a>
+						</h2>
+					</div>
+		
+					<div class="header">Test</div>
+					<div class="content">
+						Welcome to the website! Here is some bacon ipsum for your reading pleasure!
+						<br><br>
+						Bacon ipsum dolor amet landjaeger salami brisket, biltong filet mignon pork loin andouille. Jerky pig biltong pork belly chislic shankle pork strip steak bresaola doner capicola andouille ham hock pork chop chuck. Andouille alcatra strip steak cow tongue tri-tip turkey kielbasa shankle turducken. Swine pork belly bacon meatloaf, strip steak fatback meatball pig landjaeger cupim tongue burgdoggen sirloin.
+						<br><br>
+						Chuck turkey frankfurter strip steak. Chuck short ribs picanha, brisket tenderloin burgdoggen cupim ham landjaeger frankfurter ham hock ground round pork belly. Cow turducken pork belly chislic ham brisket filet mignon boudin turkey venison. Landjaeger strip steak chicken drumstick sausage hamburger shoulder venison turkey spare ribs pork chop sirloin ham hock. Drumstick ball tip turducken alcatra bacon andouille. Pig bacon jowl ribeye, leberkas doner andouille chuck sirloin porchetta meatball sausage bresaola frankfurter swine. Beef hamburger kevin pig pancetta.
+						<br><br>
+						Doner ball tip short loin, beef ribs chicken ham hock beef hamburger shoulder strip steak. Tongue chicken filet mignon ground round shoulder turkey picanha frankfurter doner pancetta alcatra turducken kevin tri-tip ribeye. Cupim fatback hamburger sausage pancetta. Brisket beef pastrami jowl. Frankfurter kevin jerky tail porchetta biltong tongue ham hock. Filet mignon kevin ball tip bresaola doner biltong cupim ham hock strip steak t-bone shankle sausage.
+						<br><br>
+						Does your lorem ipsum text long for something a little meatier? Give our generator a try… its tasty!
+					</div>
+				</div>
+	
+				<div class="hideSidebar sidebar">
+					<h4>
+						<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile. (I think for mobile you are going to want to either stack this on top of main content)-->
+						<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
+					</h4>
+				</div>
 			</div>
-		</div>
-
-		<div class="hideSidebar sidebar">
-			<h4>
-				<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile. (I think for mobile you are going to want to either stack this on top of main content)-->
-				<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
-			</h4>
+			<div class="lvl3">
+				<div class="footer">Footer</div>
+			</div>
 		</div>
 	</div>
-
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 
@@ -104,6 +120,10 @@
 		let elems = document.querySelectorAll('.sidenav');
 		let options = {edge: 'left'};
 		let instances = M.Sidenav.init(elems, options);
+
+		let dropdownTrigger = document.querySelectorAll('.dropdown-trigger');
+		let dropdownOptions = {coverTrigger: false, hover: true};
+		let dropdownInstance = M.Dropdown.init(dropdownTrigger, dropdownOptions);
 	});
 </script>
 <style>
