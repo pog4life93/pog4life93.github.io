@@ -155,3 +155,16 @@ a:hover {
     font-size: 1.8em;
     background-color: #29595c;
 }
+.sets {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.setsType {
+    display: flex;
+    width: 30%;
+}
+.setsTraits {
+    display: flex;
+    width: 70%;
+}

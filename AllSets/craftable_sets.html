@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <head>
     <title>Craftable Sets</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+			<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
-    <div>
-        <h1>
-            <!--This will go over the banner-->
-            <div class="greeting-large">
-				Craftable Sets
-            </div>
-        </h1>
-    </div>
+	<div class="lvl1">
+		<div class="lvl2">
+			<div class="lvl3">
+				<div class="greeting-large">
+					<a href="index.html" style="line-height: 0px"><img src="../assets/heroImage.jpg" /></a>
+				</div>
+				
+				<!--Navigation bar-->
+				<nav class="navigation">
+					<div class="nav-wrapper">
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger hamburger"><i class="material-icons">menu</i></a>
+							<div data-target="mobile-demo" class="sidenav-trigger greeting">Welcome to POG4LIFE Gaming!!</div>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="#"  class="navigation-items dropdown-trigger" data-target="setdd">Sets<i class="material-icons right">arrow_drop_down</i></a></li>
+							<li><a href="#" class="navigation-items dropdown-trigger" data-target="skillsdd">Skills<i class="material-icons right">arrow_drop_down</i></a></li>
+							<li><a href="AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
+							<li><a href="AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
+							<li><a href="AllCompanions/companion_corner.html" class="navigation-items">Companion Corner</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!--Navigation sidebar mobile-->
+				<ul class="sidenav" id="mobile-demo">
+					<li><a class="dropdown-trigger" href="AllSets/sets.html">Sets<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="AllSkills/skills.html">Skills</a></li>
+					<li><a href="AllChampion/champ_pts.html">Champion Points</a></li>
+					<li><a href="AllZone/zones.html">Zone Maps</a></li>
+					<li><a href="AllCompanions/companion_corner.html">Companion Corner</a></li>
+				</ul>
 
-    <!--Navigation bar-->
-    <nav>
-        <div class="nav-wrapper navigation black">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <div data-target="mobile-demo" class="sidenav-trigger greeting">Craftable Sets</div>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/index.html" class="navigation-items">Home</a></li>
-                <li><a href="/AllSets/sets.html" class="navigation-items">Sets</a></li>
-                <li><a href="/AllSkills/skills.html" class="navigation-items">Skills</a></li>
-                <li><a href="/AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
-                <li><a href="/AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
-                <li><a href="/AllCompanions/companion_corner.html" class="navigation-items">Companion Corner</a></li>
-            </ul>
-        </div>
-    </nav>
+				<!--Dropdown FIXME: When creating dropdown for the mobile, it has to have a different id-->
+				<ul id="setdd" class="dropdown-content">
+					<li><a href="AllSets/craftable_sets.html">Craftable</a></li>
+					<li><a href="AllSets/arena_sets.html">Arena</a></li>
+					<li><a href="AllSets/dungeon_sets.html">Dungeon</a></li>
+					<li><a href="AllSets/trial_sets.html">Trial</a></li>
+				</ul>
+				<ul id="skillsdd" class="dropdown-content">
+					<li><a href="AllSkills/skills.html">Classes</a></li>
+					<li><a href="AllSkills/skills.html">Alliance</a></li>
+					<li><a href="AllSkills/skills.html">Armor</a></li>
+					<li><a href="AllSkills/skills.html">Crafting</a></li>
+					<li><a href="AllSkills/skills.html">Guild</a></li>
+					<li><a href="AllSkills/skills.html">Racial</a></li>
+					<li><a href="AllSkills/skills.html">Weapon</a></li>
+					<li><a href="AllSkills/skills.html">World</a></a></li>
+				</ul>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/AllSets/sets.html">Sets</a></li>
-        <li><a href="/AllSkills/skills.html">Skills</a></li>
-        <li><a href="/AllChampion/champ_pts.html">Chamption Points</a></li>
-        <li><a href="/AllZone/zones.html">Zone Maps</a></li>
-        <li><a href="/AllCompanions/companion_corner.html">Companion Corner</a></li>
-    </ul>
+				<!--Alerts-->
+				<div class="alert">
+					This website is currently under development!! Keep checking back!!
+				</div>
+			</div>
+			
+
+			<div class="lvl4">
+				<div class="main">
+					<div class="header">Craftable</div>
+					<div class="content">
+                        <div class="sets">
+                            <div class="setsType">
+                                Adept Rider
+                            </div>
+                            <div class="setsTrait">
+                                <b>2 items:</b> Adds 1487 Armor<br>
+                                <b>3 items:</b> Adds 1487 Armor<br>
+                                <b>4 items:</b> Adds 1206 Maximum Health<br>
+                                <b>5 items:</b> Gain Major Gallop and Major Expedition at all times, increasing your Movement Speed and Mounted Speed by 30%<br>
+                            </div>
+                        </div>
+					</div>
+				</div>
+	
+				<div class="hideSidebar sidebar">
+					<h4>
+						<!--The goal is to have this show a picture on the left and right hand side of the page. Only one side if mobile. (I think for mobile you are going to want to either stack this on top of main content)-->
+						<a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
+					</h4>
+				</div>
+			</div>
+			<div class="lvl3">
+				<div class="footer">Footer</div>
+			</div>
+		</div>
+	</div>
 
     <div>
         <!--This is all of the crafted sets-->
-        <br><b>Adept Rider</b><br>
-        <b>2 items:</b> Adds 1487 Armor<br>
-        <b>3 items:</b> Adds 1487 Armor<br>
-        <b>4 items:</b> Adds 1206 Maximum Health<br>
-        <b>5 items:</b> Gain Major Gallop and Major Expedition at all times, increasing your Movement Speed and Mounted Speed by 30%<br>
+
         <br><b>Aetherial Ascension</b><br>
         <b>2 items:</b> Adds 1487 Armor<br>
         <b>3 items:</b> Adds 1206 Maximum Health<br>
@@ -424,12 +473,13 @@
 </body>
 </html>
 <script>
-	document.addEventListener('DOMContentLoaded', () => {
-		let elems = document.querySelectorAll('.sidenav');
-		let options = {edge: 'left'};
-		let instances = M.Sidenav.init(elems, options);
-	});
-</script>
-<style>
+    document.addEventListener('DOMContentLoaded', () => {
+        let elems = document.querySelectorAll('.sidenav');
+        let options = {edge: 'left'};
+        let instances = M.Sidenav.init(elems, options);
 
-</style>
+        let dropdownTrigger = document.querySelectorAll('.dropdown-trigger');
+        let dropdownOptions = {coverTrigger: false, hover: true};
+        let dropdownInstance = M.Dropdown.init(dropdownTrigger, dropdownOptions);
+    });
+</script>
