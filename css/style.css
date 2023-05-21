@@ -14,6 +14,11 @@
 body {
     color: #FFFFFF;
     background-color: #343434;
+    background-image: url('../assets/background2.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-attachment: fixed;
 }
 .header {
     color: #FFFFFF;
@@ -81,7 +86,7 @@ a:hover {
     flex-flow: column;
     width: 1000px;
     display: flex;
-    background-color: #1A1A1A;
+    background: rgba(26, 26, 26, .95);
 }
 .lvl3 {
     display: flex;
