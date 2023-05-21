@@ -156,8 +156,9 @@ a:hover {
     display: flex;
     padding: 10px;
     justify-content: center;
-    font-weight: 600;
-    font-size: 1.8em;
+    text-align: center;
+    font-weight: 300;
+    font-size: .9em;
     background-color: #29595c;
 }
 .sets {
