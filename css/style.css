@@ -14,11 +14,13 @@
 body {
     color: #FFFFFF;
     background-color: #343434;
-    background-image: url('../assets/background2.jpg');
-    background-size: 110%;
+    background-image: url('../assets/background4.jpg');
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: center center;
     background-attachment: fixed;
+    background-size: cover;
+    /* height: 100%;
+    min-height: 100vh; */
 }
 .header {
     color: #FFFFFF;
