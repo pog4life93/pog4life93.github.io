@@ -154,12 +154,31 @@ a:hover {
 }
 .footer {
     display: flex;
+    flex-flow: column;
     padding: 10px;
     justify-content: center;
     text-align: center;
     font-weight: 300;
     font-size: .9em;
     background-color: #29595c;
+}
+.social {
+    display: flex;
+    flex: 1 1 100%;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.icons {
+    padding: 0px 8px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+.icons:hover {
+    color: #1F2334;
+}
+.disclaimer {
+    display: flex;
+    flex: 1 1 100%;
 }
 .sets {
     display: flex;
