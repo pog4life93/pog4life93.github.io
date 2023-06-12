@@ -6,11 +6,7 @@
 #FAD800 Gold
 #AC44F2 Purple */
 
-/*Overriding webkit*/
-*:focus-visible {
-    outline-offset: 0px;
-    outline: 0px;
-}
+
 body {
     color: #FFFFFF;
     background-color: #343434;

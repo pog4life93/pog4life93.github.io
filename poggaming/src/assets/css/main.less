@@ -1,3 +1,5 @@
+// Colors
+
 @white: #FFFFFF;
 @pog-green: #278442;
 @pog-dark-blue: #1F2334;
@@ -6,3 +8,23 @@
 @pog-grey: #343434;
 @pog-gold: #FAD800;
 @pog-purple: #AC44F2;
+
+// Media Queries
+
+@phone-max: 600px;
+@tablet-min: 600px;
+@laptop-min: 992px;
+@desktop-min: 1200px;
+
+.phone(@styles) {
+    @media screen and (max-width: @phone-max) { @styles(); }
+}
+.tablet(@styles) {
+    @media screen and (min-width: @tablet-min) { @styles(); }
+}
+.laptop(@styles) {
+    @media screen and (min-width: @laptop-min) { @style(); }
+}
+.desktopp(@styles) {
+    @media screen and (min-width: @desktop-min) { @style(); }
+}
