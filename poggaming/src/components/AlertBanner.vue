@@ -9,14 +9,15 @@
 </template>
 
 <style lang="less" scoped>
+@import '@/assets/css/main.less';
 .alert {
-  color: #FFFFFF;
+  color: @white;
   display: flex;
   padding: 0.5rem;
   justify-content: center;
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
-  background-color: #29595c;
+  background-color: @pog-light-blue;
 }
 </style>
