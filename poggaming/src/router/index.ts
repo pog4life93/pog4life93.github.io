@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainContainer from '../views/MainContainer.vue'
-import { env } from 'node:process'
 
 const router = createRouter({
-  history: createWebHistory(env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
