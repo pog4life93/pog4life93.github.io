@@ -12,11 +12,11 @@
 .alert {
   color: #FFFFFF;
   display: flex;
-  padding: 10px;
+  padding: 0.5rem;
   justify-content: center;
   text-align: center;
   font-weight: 600;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   background-color: #29595c;
 }
 </style>
