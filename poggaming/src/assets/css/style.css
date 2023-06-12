@@ -98,14 +98,6 @@ a:hover {
     flex-flow: row;
     padding: 5%;
 }
-.alert {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1.8em;
-    background-color: #29595c;
-}
 .main {
     display: flex;
     flex-flow: column;
