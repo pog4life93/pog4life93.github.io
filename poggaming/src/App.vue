@@ -1,81 +1,121 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
+import TopNav from '@/components/TopNav.vue';
+import AlertBanner from '@/components/AlertBanner.vue';
+import SideBar from '@/components/SideBar.vue';
+
+const isMobile = computed(() => (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)));
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <div class="lvl1">
+    <div class="lvl2">
+      <header class="lvl3">
+          <!-- <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+          </nav> -->
 
-      <nav>
-        <!-- <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink> -->
-      </nav>
+          <div class=heroimage><a href="index.html" /></div>
+
+          <!-- <TopNav /> -->
+          <AlertBanner />
+      </header>
+      <div class="lvl4">
+        <div class="main">
+          <RouterView />
+        </div>
+        <div class="sidebar">
+          <SideBar v-if="!isMobile" />
+        </div>
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<style lang="less">
+@import '@/assets/css/main.less';
+
+html {
+  color: @white;
+  background-color: @pog-grey;
+  background-image: url('@/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+/*Overriding webkit*/
+*:focus-visible {
+  outline-offset: 0px;
+  outline: 0px;
 }
+</style>
 
-nav {
+<style lang="less" scoped>
+@import '@/assets/css/main.less';
+.lvl1 {
+  display: flex;
+  justify-content: center;
+}
+.lvl2 {
+  flex-flow: column;
+  width: 1000px;
+  min-height: 100vh;
+  display: flex;
+  background: rgba(26, 26, 26, .95);
+  
+  .phone({
+    width: 100%;
+  })
+}
+.lvl3 {
+  display: flex;
+  flex-flow: column;
+  height: fit-content;
+}
+.lvl4 {
+  display: flex;
+  flex-flow: row;
+  padding: 10px;
+}
+.heroimage {
+  display: flex;
   width: 100%;
-  font-size: 12px;
+  justify-content: center;
+  line-height: 0;
+
+  &::before {
+    content: url("@/assets/images/heroImage.jpg");   
+  }
+
+  .phone(
+    {
+      content: url("@/assets/images/heroImage.jpg");
+    }
+  )
+}
+.main {
+  display: flex;
+  flex-flow: column;
+  width: 70%;
+  margin: 10px 0px 0px 5px;
+  
+  .phone({
+    width: 100%;
+    margin: 10px 0 0 0;
+  })
+}
+.sidebar {
+  display: flex;
+  width: 30%;
+  margin: 10px 5px 0px 0px;    
+  flex-direction: column;
   text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
 }
 </style>

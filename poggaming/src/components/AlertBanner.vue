@@ -19,5 +19,9 @@
   font-weight: 600;
   font-size: 1.8rem;
   background-color: @pog-light-blue;
+
+  .phone({
+    font-size: .9rem;
+  })
 }
 </style>

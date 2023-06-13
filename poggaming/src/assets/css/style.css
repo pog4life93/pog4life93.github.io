@@ -6,16 +6,6 @@
 #FAD800 Gold
 #AC44F2 Purple */
 
-
-body {
-    color: #FFFFFF;
-    background-color: #343434;
-    background-image: url('../assets/background4.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
 .header {
     color: #FFFFFF;
     width: 100%;
@@ -65,48 +55,12 @@ a:hover {
       display: none;
     }
   }
-.greeting-large {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 @media screen and (max-width: 993px) {
     .greeting-large {
       display: none;
     }
   }
-.lvl1 {
-    display: flex;
-    justify-content: center;
-}
-.lvl2 {
-    flex-flow: column;
-    width: 75%;
-    display: flex;
-    background: rgba(26, 26, 26, .95);
-}
-.lvl3 {
-    display: flex;
-    flex-flow: column;
-}
-.lvl4 {
-    display: flex;
-    flex-flow: row;
-    padding: 5%;
-}
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 70%;
-    margin: 10px 0px 0px 5px;    
-}
-.sidebar {
-    display: flex;
-    width: 30%;
-    margin: 10px 5px 0px 0px;    
-    flex-direction: column;
-    text-align: center;
-}
+
 @media screen and (max-width: 480px) {
     .supermain {
         flex-direction: column;
