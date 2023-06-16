@@ -1,26 +1,26 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
 import TopNav from '@/components/TopNav.vue';
 import AlertBanner from '@/components/AlertBanner.vue';
 import SideBar from '@/components/SideBar.vue';
 
-const isMobile = computed(() => (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)));
+const isMobile = computed(() =>
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+);
 </script>
 
 <template>
   <div class="lvl1">
     <div class="lvl2">
       <header class="lvl3">
-          <!-- <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-          </nav> -->
+        <div class="hamburger-icon-position">
+          <TopNav v-if="isMobile" />
+        </div>
+        <div class="heroimage"><a href="index.html" /></div>
 
-          <div class=heroimage><a href="index.html" /></div>
-
-          <!-- <TopNav /> -->
-          <AlertBanner />
+        <TopNav v-if="!isMobile" />
+        <AlertBanner />
       </header>
       <div class="lvl4">
         <div class="main">
@@ -68,11 +68,11 @@ html {
   width: 1000px;
   min-height: 100vh;
   display: flex;
-  background: rgba(26, 26, 26, .95);
-  
+  background: rgba(26, 26, 26, 0.95);
+
   .phone({
     width: 100%;
-  })
+  });
 }
 .lvl3 {
   display: flex;
@@ -91,31 +91,36 @@ html {
   line-height: 0;
 
   &::before {
-    content: url("@/assets/images/heroImage.jpg");   
+    content: url('@/assets/images/heroImage.jpg');
   }
 
   .phone(
     {
-      content: url("@/assets/images/heroImage.jpg");
+      content: url('@/assets/images/heroImage.jpg');
     }
-  )
+  );
 }
 .main {
   display: flex;
   flex-flow: column;
   width: 70%;
   margin: 10px 0px 0px 5px;
-  
+
   .phone({
     width: 100%;
     margin: 10px 0 0 0;
-  })
+  });
 }
 .sidebar {
   display: flex;
   width: 30%;
-  margin: 10px 5px 0px 0px;    
+  margin: 10px 5px 0px 0px;
   flex-direction: column;
   text-align: center;
+}
+
+.hamburger-icon-position {
+  position: absolute;
+  z-index: 1;
 }
 </style>
