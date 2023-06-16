@@ -2,9 +2,6 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.node.json"
-    },
-    {
       "path": "./tsconfig.app.json"
     },
     {
@@ -13,6 +10,7 @@
   ],
   "compilerOptions": {
     "target": "es2022",
-    "module": "es2022"
+    "module": "es2022",
+    "allowUnreachableCode": false
   }
 }
