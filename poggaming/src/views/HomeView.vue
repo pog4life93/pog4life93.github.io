@@ -14,8 +14,7 @@ const isMobile = computed(() =>
   <div class="video-embeds">
     <iframe
       src="https://player.twitch.tv/?channel=xpog4lifex&parent=poggaming.com&muted=true&autoplay=true"
-      class="video">
-    </iframe>
+      class="video"></iframe>
   </div>
 
   <HeaderLarge>YouTube</HeaderLarge>
@@ -43,7 +42,8 @@ const isMobile = computed(() =>
     years before I was medically discharged due to a shoulder injury I sustained in Iraq. I began
     creating content on YouTube for others in February of 2022. I began streaming on Twitch May of
     2022.
-    <br /><br />
+    <br />
+    <br />
     I am developing this website, my YouTube channel, and my Twitch channel as a means of improving
     the community, having some fun, and getting an opportunity to learn more. If you're interested
     in helping, have questions, or have specific content requests, let me know via email at

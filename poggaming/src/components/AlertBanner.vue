@@ -1,10 +1,9 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="alert">
-    We are steadily working to add content that will allow you a one-stop shop for your Elder Scrolls Online needs!!
+    We are steadily working to add content that will allow you a one-stop shop for your Elder
+    Scrolls Online needs!!
   </div>
 </template>
 
@@ -21,7 +20,7 @@
   background-color: @pog-light-blue;
 
   .phone({
-    font-size: .9rem;
-  })
+    font-size: 0.9rem;
+  });
 }
 </style>

@@ -29,24 +29,26 @@ function initialize() {
       <div class="nav-wrapper">
         <ul class="right hide-on-med-and-down">
           <li>
-            <RouterLink to="/" class="navigation-items dropdown-trigger" data-target="setdd"
-              >Sets<i class="material-icons right">arrow_drop_down</i></RouterLink
-            >
+            <RouterLink to="/" class="navigation-items dropdown-trigger" data-target="setdd">
+              Sets
+              <i class="material-icons right">arrow_drop_down</i>
+            </RouterLink>
           </li>
           <li>
             <RouterLink
               to="/contact"
               class="navigation-items dropdown-trigger"
-              data-target="skillsdd"
-              >Skills<i class="material-icons right">arrow_drop_down</i></RouterLink
-            >
+              data-target="skillsdd">
+              Skills
+              <i class="material-icons right">arrow_drop_down</i>
+            </RouterLink>
           </li>
           <li><a href="AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
           <li><a href="AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
           <li>
-            <a href="AllCompanions/companion_corner.html" class="navigation-items"
-              >Companion Corner</a
-            >
+            <a href="AllCompanions/companion_corner.html" class="navigation-items">
+              Companion Corner
+            </a>
           </li>
         </ul>
       </div>
@@ -56,14 +58,15 @@ function initialize() {
   <!--Navigation sidebar mobile-->
   <div v-else>
     <nav class="mobile">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger hamburger"
-        ><i class="material-icons">menu</i></a
-      >
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger hamburger">
+        <i class="material-icons">menu</i>
+      </a>
       <ul class="sidenav" id="mobile-demo">
         <li>
-          <a class="dropdown-trigger" href="AllSets/sets.html"
-            >Sets<i class="material-icons right">arrow_drop_down</i></a
-          >
+          <a class="dropdown-trigger" href="AllSets/sets.html">
+            Sets
+            <i class="material-icons right">arrow_drop_down</i>
+          </a>
         </li>
         <li><a href="AllSkills/skills.html">Skills</a></li>
         <li><a href="AllChampion/champ_pts.html">Champion Points</a></li>
