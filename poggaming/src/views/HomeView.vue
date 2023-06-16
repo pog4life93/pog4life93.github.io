@@ -14,20 +14,18 @@ const isMobile = computed(() =>
   <div class="video-embeds">
     <iframe
       src="https://player.twitch.tv/?channel=xpog4lifex&parent=poggaming.com&muted=true&autoplay=true"
-      height="385px"
-      width="686px">
+      class="video">
     </iframe>
   </div>
 
   <HeaderLarge>YouTube</HeaderLarge>
   <div class="video-embeds">
     <iframe
-      width="686px"
-      height="385px"
       src="https://www.youtube.com/embed/Ne54t-eMk40"
       title="POGGaming"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      class="video"></iframe>
   </div>
 
   <HeaderLarge>Welcome In!!</HeaderLarge>
@@ -55,6 +53,9 @@ const isMobile = computed(() =>
 
 <style lang="less" scoped>
 @import '@/assets/css/main.less';
+
+@video-width: 686px;
+@phone-video-width: 368px;
 .video-embeds {
   width: 100%;
   margin-bottom: 20px;
@@ -62,5 +63,14 @@ const isMobile = computed(() =>
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+.video {
+  width: @video-width;
+  height: calc(@video-width * 0.56);
+
+  .phone({
+    width: @video-width;
+    height: calc(@phone-video-width * 0.56);
+  });
 }
 </style>
