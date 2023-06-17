@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-
 import HeaderLarge from '@/components/HeaderLarge.vue';
 import ContentLarge from '@/components/ContentLarge.vue';
-
-const isMobile = computed(() =>
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-);
 </script>
 
 <template>

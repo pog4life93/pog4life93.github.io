@@ -1,33 +1,27 @@
 <script setup lang="ts">
-import { computed } from 'vue';
 import { RouterView } from 'vue-router';
 import TopNav from '@/components/TopNav.vue';
 import AlertBanner from '@/components/AlertBanner.vue';
 import SideBar from '@/components/SideBar.vue';
-
-const isMobile = computed(() =>
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-);
 </script>
 
 <template>
   <div class="lvl1">
     <div class="lvl2">
       <header class="lvl3">
-        <div class="hamburger-icon-position">
-          <TopNav v-if="isMobile" />
+        <div class="lvl4">
+          <div class="navigation"><TopNav /></div>
+          <div class="heroimage"><a href="index.html" /></div>
         </div>
-        <div class="heroimage"><a href="index.html" /></div>
 
-        <TopNav v-if="!isMobile" />
         <AlertBanner />
       </header>
-      <div class="lvl4">
+      <div class="lvl5">
         <div class="main">
           <RouterView />
         </div>
         <div class="sidebar">
-          <SideBar v-if="!isMobile" />
+          <SideBar />
         </div>
       </div>
     </div>
@@ -65,7 +59,8 @@ html {
 }
 .lvl2 {
   flex-flow: column;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   min-height: 100vh;
   display: flex;
   background: rgba(26, 26, 26, 0.95);
@@ -81,8 +76,21 @@ html {
 }
 .lvl4 {
   display: flex;
+  flex-flow: column;
+  height: fit-content;
+
+  .desktop({
+    flex-flow: column-reverse;
+  });
+}
+.lvl5 {
+  display: flex;
   flex-flow: row;
   padding: 10px;
+
+  .laptop({
+    flex-wrap: wrap-reverse;
+  });
 }
 .heroimage {
   display: flex;
@@ -90,15 +98,7 @@ html {
   justify-content: center;
   line-height: 0;
 
-  &::before {
-    content: url('@/assets/images/heroImage.jpg');
-  }
-
-  .phone(
-    {
-      content: url('@/assets/images/heroImage.jpg');
-    }
-  );
+  content: url('@/assets/images/heroImage.jpg');
 }
 .main {
   display: flex;
@@ -106,7 +106,7 @@ html {
   width: 70%;
   margin: 10px 0px 0px 5px;
 
-  .phone({
+  .laptop({
     width: 100%;
     margin: 10px 0 0 0;
   });
@@ -117,10 +117,23 @@ html {
   margin: 10px 5px 0px 0px;
   flex-direction: column;
   text-align: center;
+
+  .laptop({
+    width: 100%;
+  });
+
+  .phone({
+    display: none;
+  });
 }
 
-.hamburger-icon-position {
-  position: absolute;
-  z-index: 1;
+.navigation {
+  display: flex;
+
+  .laptop({
+    display: block;
+    position: absolute;
+    z-index: 1;
+  });
 }
 </style>
