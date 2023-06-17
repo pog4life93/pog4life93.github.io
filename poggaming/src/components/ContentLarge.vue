@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({ centerText: Boolean });
+</script>
 
 <template>
-  <div class="content">
+  <div class="content" :class="{ 'center-text': centerText }">
     <slot />
   </div>
 </template>
@@ -16,7 +18,12 @@
   padding: 10px;
 
   .phone({
-      font-size: 0.9rem;
-    });
+    font-size: 0.9rem;
+  });
+}
+
+.center-text {
+  text-align: center;
+  justify-content: center;
 }
 </style>

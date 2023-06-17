@@ -6,7 +6,7 @@ import ContentLarge from '@/components/ContentLarge.vue';
 <template>
   <div>
     <HeaderLarge>Contact Information</HeaderLarge>
-    <ContentLarge>
+    <ContentLarge center-text>
       Email: pog4life93@gmail.com
       <br />
       P.O. Box 862
