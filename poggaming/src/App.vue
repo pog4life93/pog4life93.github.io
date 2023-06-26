@@ -25,7 +25,7 @@ import SocialNav from '@/components/FooterNav.vue';
           <SideBar />
         </div>
       </div>
-      <div class="SocialNav">
+      <div>
           <SocialNav />
         </div>
     </div>
