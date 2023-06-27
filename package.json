@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
+    "build": "rm -rf docs && vite build && mv dist docs && touch docs/CNAME && echo www.poggaming.com > docs/CNAME",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
