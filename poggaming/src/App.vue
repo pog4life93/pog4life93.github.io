@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import TopNav from '@/components/TopNav.vue';
+// import TopNav from '@/components/TopNav.vue';
 import AlertBanner from '@/components/AlertBanner.vue';
 import SideBar from '@/components/SideBar.vue';
 import SocialNav from '@/components/FooterNav.vue';
@@ -11,7 +11,7 @@ import SocialNav from '@/components/FooterNav.vue';
     <div class="lvl2">
       <header class="lvl3">
         <div class="lvl4">
-          <div class="navigation"><TopNav /></div>
+          <!-- <div class="navigation"><TopNav /></div> -->
           <div class="heroimage"><a href="index.html" /></div>
         </div>
 
@@ -25,9 +25,9 @@ import SocialNav from '@/components/FooterNav.vue';
           <SideBar />
         </div>
       </div>
-      <div>
-          <SocialNav />
-        </div>
+      <div class="lvl3">
+        <SocialNav />
+      </div>
     </div>
   </div>
 </template>

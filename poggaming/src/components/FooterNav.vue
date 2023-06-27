@@ -22,9 +22,9 @@ import '@/assets/css/solid.css';
     <a href="https://www.youtube.com/c/POG4LIFE" title="YouTube" target="_blank">
       <i class="fa-brands fa-youtube icons"></i>
     </a>
-    <a href="/pog4life93.github.io/contact.html" title="Contact Us">
+    <RouterLink to="/contact" title="Contact">
       <i class="fa-solid fa-comments icons"></i>
-    </a>
+    </RouterLink>
   </div>
   <div class="DisclaimerNote">
     The Elder Scrolls®️ Online is developed by ZeniMax Online Studios LLC, a ZeniMax Media company.
