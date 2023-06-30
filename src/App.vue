@@ -46,6 +46,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-x: hidden; // Added to keep horizontal scrollbar from appearing when vertical does on mobile/laptop.
 }
 
 /*Overriding webkit*/
