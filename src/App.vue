@@ -25,7 +25,7 @@ import SocialNav from '@/components/FooterNav.vue';
           <SideBar />
         </div>
       </div>
-      <div class="lvl3">
+      <div class="lvl3 footer">
         <SocialNav />
       </div>
     </div>
@@ -91,9 +91,11 @@ html {
   display: flex;
   flex-flow: row;
   padding: 10px;
+  flex: 1 0 auto;
 
   .laptop({
-    flex-wrap: wrap-reverse;
+    flex-flow: column-reverse;
+    justify-content: flex-end;
   });
 }
 .heroimage {
