@@ -26,7 +26,7 @@ function initialize() {
       </RouterLink>
       <ul class="right hide-on-med-and-down">
         <li>
-          <RouterLink to="/" class="navigation-items dropdown-trigger" data-target="setdd">
+          <RouterLink to="/src/views/CraftedSets.vue" class="navigation-items dropdown-trigger" data-target="setdd">
             Sets
             <i class="material-icons right">arrow_drop_down</i>
           </RouterLink>
