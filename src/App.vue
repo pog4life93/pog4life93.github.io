@@ -91,9 +91,11 @@ html {
   display: flex;
   flex-flow: row;
   padding: 10px;
+  flex: 1 0 auto;
 
   .laptop({
-    flex-wrap: wrap-reverse;
+    flex-flow: column-reverse;
+    justify-content: flex-end;
   });
 }
 .heroimage {
