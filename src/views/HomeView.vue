@@ -7,7 +7,7 @@ import ContentLarge from '@/components/ContentLarge.vue';
   <HeaderLarge>Twitch</HeaderLarge>
   <div class="video-embeds">
     <iframe
-      src="https://player.twitch.tv/?channel=xpog4lifex&parent=poggaming.com&muted=true&autoplay=true"
+      src="https://player.twitch.tv/?channel=xpog4lifex&parent=poggaming.com&parent=www.poggaming.com&parent=www.poggaming.com/404&parent=poggaming.com/404&muted=true&autoplay=true"
       class="video"></iframe>
   </div>
 
