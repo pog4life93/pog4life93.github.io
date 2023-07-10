@@ -24,33 +24,58 @@ defineProps({ set: Object as PropType<Set> });
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
+
+  .phone({
+    flex-flow: column;
+  });
 }
 .info {
   display: flex;
   width: 30%;
   flex-flow: column;
   padding-right: 8px;
+
+  .phone({
+    width: 100%;
+  });
 }
 .name {
   display: flex;
   font-size: 1.5em;
   font-weight: 675;
   color: @pog-gold;
+
+  .phone({
+    justify-content: center;
+  });
 }
 
 .type {
   display: flex;
   font-size: 1.2em;
+
+  .phone({
+    justify-content: center;
+  });
 }
 
 .zone {
   display: flex;
   font-size: 1.2em;
+
+  .phone({
+    justify-content: center;
+    padding-bottom: 12px;
+  });
 }
 .attributes {
   display: flex;
   flex-flow: column;
   width: 70%;
 
+  .phone({
+    width: 100%;
+    text-align: center;
+  });
 }
 </style>

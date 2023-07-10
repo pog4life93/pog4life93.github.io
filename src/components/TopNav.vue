@@ -58,7 +58,7 @@ function initialize() {
   <ul class="sidenav" id="mobile-demo">
     <li><RouterLink to="/">Home</RouterLink></li>
     <li>
-      <RouterLink to="/sets" class="dropdown-trigger">
+      <RouterLink to="#" class="dropdown-trigger" data-target="setmobiledd">
         Sets
         <i class="material-icons right">arrow_drop_down</i>
       </RouterLink>
@@ -86,6 +86,14 @@ function initialize() {
     <li><a href="AllSkills/skills.html">Weapon</a></li>
     <li><a href="AllSkills/skills.html">World</a></li>
   </ul> -->
+
+  <!--Dropdowns for MOBILE-->
+  <ul id="setmobiledd" class="dropdown-content">
+    <li><RouterLink to="/sets/crafted-sets">Craftable</RouterLink></li>
+    <!-- <li><a href="AllSets/arena_sets.html">Arena</a></li>
+    <li><a href="AllSets/dungeon_sets.html">Dungeon</a></li>
+    <li><a href="AllSets/trial_sets.html">Trial</a></li> -->
+  </ul>
 </template>
 
 <style lang="less" scoped>
@@ -97,6 +105,7 @@ function initialize() {
   background-color: @pog-dark-blue;
   font-family: 'Arial Narrow Bold';
   font-weight: 600;
+  z-index: 1;
 
   .laptop({
     box-shadow: none;

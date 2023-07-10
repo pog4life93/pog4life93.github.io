@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { CraftedSets } from '@/constants/CraftedSets';
-import ArmorContainer from '@/components/ArmorContainer.vue';
+import SetContainer from '@/components/SetContainer.vue';
 </script>
 
 <template>
   <div v-for="craftedSet in CraftedSets" :key="craftedSet.Name" class="border">
-    <ArmorContainer :set="craftedSet" />
+    <SetContainer :set="craftedSet" />
   </div>
 </template>
 
