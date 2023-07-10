@@ -22,7 +22,12 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
-      path: '/crafted-sets',
+      path: '/sets',
+      name: 'sets',
+      component: () => import('../views/SetsView.vue'),
+    },
+    {
+      path: '/sets/crafted-sets',
       name: 'craftedsets',
       component: () => import('../views/CraftedSets.vue'),
     },
