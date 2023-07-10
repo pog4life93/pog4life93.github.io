@@ -6,11 +6,15 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      redirect: { name: 'home' },
+    },
+    {
+      path: '/pog4life93.github.io/',
       name: 'home',
       component: HomeView,
     },
     {
-      path: '/contact',
+      path: '/pog4life93.github.io/contact',
       name: 'contact',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -18,14 +22,10 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
-      path: '/CraftedSets',
+      path: '/pog4life93.github.io/crafted-sets',
       name: 'craftedsets',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/CraftedSets.vue'),
     },
-
   ],
 });
 
