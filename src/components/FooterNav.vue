@@ -41,7 +41,7 @@ import '@/assets/css/solid.css';
   justify-content: center;
   text-align: center;
   font-weight: 300;
-  font-size: 0.6em;
+  font-size: 0.9em;
   background-color: @pog-light-blue;
 
   .icons {
@@ -54,7 +54,7 @@ import '@/assets/css/solid.css';
   }
 
   .phone({
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   });
 }
 .DisclaimerNote {
