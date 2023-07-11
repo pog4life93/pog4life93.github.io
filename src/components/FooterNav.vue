@@ -41,12 +41,12 @@ import '@/assets/css/solid.css';
   justify-content: center;
   text-align: center;
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   background-color: @pog-light-blue;
 
   .icons {
     padding: 0px 20px;
-    font-size: 2em;
+    font-size: 2.5vw;
     color: #ffffff;
   }
   .icons:hover {

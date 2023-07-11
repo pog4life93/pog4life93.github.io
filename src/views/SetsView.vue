@@ -27,11 +27,11 @@
       cursor: pointer;
       color: @pog-dark-blue;
     }
-    .phone ({
+    .phone({
       width: 250px;
       font-size: 2rem;
       border-radius: 15px;
-    });;
+    });
   }
 }
 
