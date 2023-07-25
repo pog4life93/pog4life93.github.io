@@ -45,17 +45,24 @@ import '@/assets/css/solid.css';
   background-color: @pog-light-blue;
 
   .icons {
-    padding: 0px 20px;
-    font-size: 2.5vw;
+    padding: 0px 35px;
+    font-size: 1.8rem;
     color: #ffffff;
+
+    .laptop({
+      font-size: 1.5rem;
+      padding: 0px 25px;
+    });
+
+    .phone({
+      font-size: 1rem;
+      padding: 0px 15px;
+    });
   }
   .icons:hover {
     color: #1f2334;
   }
 
-  .phone({
-    font-size: 0.6rem;
-  });
 }
 .DisclaimerNote {
   color: @white;
