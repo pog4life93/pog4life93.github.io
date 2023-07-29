@@ -79,6 +79,10 @@ function closeMenu() {
     </div>
   </nav>
 
+  <ul id="setdd" class="dropdown-content">
+    <li><RouterLink to="/sets/crafted-sets">Craftable</RouterLink></li>
+  </ul>
+
   <!--Navigation sidebar mobile-->
   <MobileNav v-if="mobileOpen" @link-clicked="closeMenu"/>
 </template>
