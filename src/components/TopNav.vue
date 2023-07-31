@@ -1,10 +1,22 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { RouterLink } from 'vue-router';
 import M from 'materialize-css';
 import MobileNav from './MobileNav.vue';
 
 const mobileOpen = ref(false);
+
+watch(mobileOpen, () => {
+  const el = document.getElementById('main');
+
+  if (mobileOpen.value && el) {
+    el.style.overflow = 'hidden';
+    el.style.height = '100vh';
+    el.style.margin = '0';
+  } else {
+    if (el) el.removeAttribute('style');
+  }
+});
 
 initialize();
 
@@ -31,8 +43,7 @@ const handleClickOutside = (event: any) => {
   const nav = document.querySelector('.mobile-nav');
 
   if (nav && !nav.contains(event.target.parentNode)) {
-    mobileOpen.value = false;
-    document.removeEventListener('click', handleClickOutside);
+    closeMenu();
   }
 };
 
@@ -84,7 +95,9 @@ function closeMenu() {
   </ul>
 
   <!--Navigation sidebar mobile-->
-  <MobileNav v-if="mobileOpen" @link-clicked="closeMenu"/>
+  <Teleport to="html">
+    <MobileNav v-if="mobileOpen" @link-clicked="closeMenu" />
+  </Teleport>
 </template>
 
 <style lang="less" scoped>
@@ -135,6 +148,7 @@ function closeMenu() {
   i {
     height: 0;
     line-height: initial;
+    font-size: 30px;
   }
 }
 </style>

@@ -16,7 +16,7 @@ const emit = defineEmits(['link-clicked']);
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 60vw;
+  width: 80vw;
   height: 100vh;
   background-color: @pog-dark-blue;
   z-index: 10;

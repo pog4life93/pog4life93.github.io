@@ -7,7 +7,7 @@ import SocialNav from '@/components/FooterNav.vue';
 </script>
 
 <template>
-  <div class="lvl1">
+  <div id="main" class="lvl1">
     <div class="lvl2">
       <header class="lvl3">
         <div class="lvl4">
@@ -141,6 +141,8 @@ html {
     display: block;
     position: absolute;
     z-index: 1;
+    margin-left: 15px;
+    margin-top: 10px;
   });
 }
 </style>
