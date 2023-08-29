@@ -31,6 +31,21 @@ const router = createRouter({
       name: 'craftedsets',
       component: () => import('../views/CraftedSets.vue'),
     },
+    {
+      path: '/cp',
+      name: 'cp',
+      component: () => import('../views/ChampionPointsView.vue'),
+    },
+    {
+      path: '/cp/green-cp',
+      name: 'championpoints',
+      component: () => import('../views/GreenCP.vue'),
+    },
+    {
+      path: '/amazon',
+      name: 'amazon',
+      component: () => import('../views/Amazon.vue'),
+    }
   ],
 });
 
