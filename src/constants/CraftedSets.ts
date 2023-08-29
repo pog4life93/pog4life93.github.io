@@ -826,5 +826,5 @@ export const CraftedSets = [
       '(4 items): Adds 129 Weapon and Spell Damage',
       '(5 items): While in combat, applying a Major Buff or Debuff to a target grants you  260 Magicka and Stamina Recovery for 15 seconds. While in combat, applying a Minor Buff or Debuff to a target grants you  130 Magicka and Stamina Recovery for 15 seconds.',
     ],
-  }
+  },
 ];

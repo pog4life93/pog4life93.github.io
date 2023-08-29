@@ -71,6 +71,12 @@ function closeMenu() {
           </RouterLink>
         </li>
         <!-- <li>
+          <RouterLink to="/cp" class="navigation-items dropdown-trigger" data-target="cpdd">
+            Champion Points
+            <i class="material-icons right">arrow_drop_down</i>
+          </RouterLink>
+        </li> -->
+        <!-- <li>
           <RouterLink
             to="/contact"
             class="navigation-items dropdown-trigger"
@@ -79,7 +85,6 @@ function closeMenu() {
             <i class="material-icons right">arrow_drop_down</i>
           </RouterLink>
         </li>
-        <li><a href="AllChampion/champ_pts.html" class="navigation-items">Champion Points</a></li>
         <li><a href="AllZone/zones.html" class="navigation-items">Zone Maps</a></li>
         <li>
           <a href="AllCompanions/companion_corner.html" class="navigation-items">
