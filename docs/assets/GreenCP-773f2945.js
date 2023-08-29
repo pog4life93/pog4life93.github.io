@@ -1,0 +1,1 @@
+import{S as n}from"./SetContainer-326600d3.js";import{d as a,o as t,c as r,g as o,F as _,a as c,_ as d}from"./index-ea8147a8.js";const p=a({__name:"GreenCP",setup(l){return(s,m)=>(t(!0),r(_,null,o(s.CraftedSets,e=>(t(),r("div",{key:e.Name,class:"border"},[c(n,{set:e},null,8,["set"])]))),128))}});const i=d(p,[["__scopeId","data-v-e4f9d3b7"]]);export{i as default};

@@ -6,6 +6,9 @@ import ContentLarge from '@/components/ContentLarge.vue';
 <template>
   <div>
     <HeaderLarge center-text>Amazon Shopping</HeaderLarge>
+    <ContentLarge center-text>
+      I may make commission for you purchasing from these links!
+    </ContentLarge>
     <!-- <h3>Playstation 5</h3> -->
     <iframe
       sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
