@@ -4,7 +4,7 @@
   <main class="link">
     <a href="https://www.etsy.com/shop/SavageDuo" target="_blank"><em>Get Your POG Merch!</em></a>
     <a href="https://ko-fi.com/xpog4lifex" target="_blank">
-      <img src="@/assets/images/donate.png" />
+      <img src="@/assets/images/tips.png" />
     </a>
   </main>
 </template>
